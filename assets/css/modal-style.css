@@ -1,0 +1,106 @@
+.modal-backdrop {
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  z-index: 99999;
+}
+
+.modal .mx-400-width {
+  max-width: 400px;
+}
+
+.modal-custom .modal-content {
+  border-radius: 12px;
+}
+
+.modal-custom .modal-header {
+  padding: 25px 40px 22px 40px;
+  line-height: 28px;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  border-radius: 12px 12px 0 0;
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-custom .modal-header h4.modal-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #001436;
+  letter-spacing: -0.15px;
+}
+
+.modal-custom .modal-header p {
+  line-height: 18px;
+  font-size: 14px;
+  color: #8e98a0;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.modal-custom .modal-header .close {
+  padding: 0;
+  margin: 0;
+  color: #01286a;
+  opacity: 1;
+  text-align: right;
+}
+
+.modal-custom .modal-header .modal-header-left {
+  width: calc(100% - 50px);
+}
+
+.modal-custom .modal-header .modal-header-right {
+  width: 50px;
+}
+
+.modal-custom .modal-body {
+  padding: 20px 40px;
+}
+
+.modal-custom .modal-footer-bottom {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.modal-custom .modal-footer-bottom .modal-footer-bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.modal-custom .modal-footer-bottom .btn.btn-common-primary {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-custom .modal-header {
+    padding: 23px 20px 20px 20px;
+  }
+  .modal-custom .modal-body {
+    padding: 20px 20px;
+  }
+}
+/*# sourceMappingURL=modal-style.css.map */

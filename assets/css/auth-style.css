@@ -1,0 +1,434 @@
+.auth-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #246ae0;
+  min-height: 100vh;
+}
+
+.auth-section::before {
+  content: "";
+  background: url(../images/background/auth-bg-pattern.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+.auth-section .auth-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.auth-section .auth-div .auth-root-div {
+  padding: 60px 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side {
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 610px;
+  max-width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side::before {
+  content: "";
+  background: url(../images/character/blooksy-character-img02.png) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  display: inline-block;
+  height: 264px;
+  width: 198px;
+  position: absolute;
+  -webkit-animation: character-animation 2s none 0s ease-out;
+          animation: character-animation 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation {
+  0% {
+    -webkit-transform: rotate(0) translateX(-80%) translateY(80%);
+            transform: rotate(0) translateX(-80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+@keyframes character-animation {
+  0% {
+    -webkit-transform: rotate(0) translateX(-80%) translateY(80%);
+            transform: rotate(0) translateX(-80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side::after {
+  content: "";
+  background: url(../images/character/auth-bottom-img-01.svg) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  display: inline-block;
+  height: 296px;
+  width: 150%;
+  position: absolute;
+  bottom: -10px;
+  left: -30%;
+  -webkit-animation: character-animation02 2s none 0s ease-out;
+          animation: character-animation02 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation02 {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+            transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0) scale(1);
+            transform: rotate(0) translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes character-animation02 {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+            transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0) scale(1);
+            transform: rotate(0) translateX(0) translateY(0) scale(1);
+  }
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side.auth-rt-img-div::before {
+  top: 60px;
+  right: -90px;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side.auth-lt-img-div::before {
+  background: url(../images/character/blooksy-character-img01.png) no-repeat;
+  background-position: top left;
+  top: 60px;
+  left: -90px;
+  -webkit-animation: character-animation03 2s none 0s ease-out;
+          animation: character-animation03 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation03 {
+  0% {
+    -webkit-transform: rotate(0) translateX(80%) translateY(80%);
+            transform: rotate(0) translateX(80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+@keyframes character-animation03 {
+  0% {
+    -webkit-transform: rotate(0) translateX(80%) translateY(80%);
+            transform: rotate(0) translateX(80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div {
+  padding: 25px 40px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+  border-radius: 9px;
+  position: relative;
+  z-index: 3;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .auth-logo-div {
+  padding: 35px 0 0 0;
+  margin: 0 0 45px 0;
+  position: relative;
+  width: 100%;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .auth-logo-div .img-responsive {
+  width: 115px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .heading-div {
+  padding: 0;
+  margin: 0 0 35px 0;
+  position: relative;
+  width: 100%;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .heading-div h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #001436;
+  margin: 0;
+  display: block;
+  width: 100%;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .heading-div p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 20, 54, 0.45);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .or-separator-div {
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: center;
+  position: relative;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .or-separator-div::before {
+  content: "";
+  background: #d0d4da;
+  -webkit-box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+  border-radius: 9px;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .or-separator-div p {
+  padding: 0 5px;
+  margin: 0;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #001436;
+  text-transform: uppercase;
+  min-width: 42px;
+  position: relative;
+  background-color: #fff;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .form-group-custom .custom-icon {
+  color: #fff;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .form-group-custom .form-control {
+  background: transparent;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .checkbox-space-box {
+  padding: 5px 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .general-form-btn {
+  width: 100%;
+  margin: 0 0 25px 0;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .link-div {
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .link-div .link {
+  color: #001436;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .mb-50 {
+  margin-bottom: 50px;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .form-auth-root .form-root .mb-35 {
+  margin-bottom: 35px;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .bottom-row {
+  margin: 0 0 0 0;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side {
+  text-align: center;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a4a4a;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p .btn-primary-link {
+  padding: 0;
+  margin: 0 0 0 5px;
+  line-height: inherit;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p .btn-primary-link:hover {
+  text-decoration: none;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div {
+  margin: 0 0 40px 0;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link {
+  padding: 0 15px;
+  margin: 0 0 10px 0;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #d0d4da;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #001436;
+  letter-spacing: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link .icon-span-border {
+  border-right: 1px solid #0015387a;
+  margin: 0 0 0 0;
+  padding: 0px 5px 0 3px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link .text-span {
+  padding: 0 0 0 15px;
+  width: calc(100% - 15px);
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link .sicon-font {
+  color: #01286a;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link:hover {
+  color: #fff;
+  background-color: #001436;
+  border: 1px solid #001436;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link:hover .sicon-font {
+  color: #fff;
+}
+
+.auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div .social-button-div .social-button-box .social-button-link:hover .icon-span-border {
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+  .auth-section .auth-div .auth-root-div {
+    padding: 10px 10px;
+  }
+  .auth-section .auth-div .auth-root-div .auth-center-side::before {
+    display: none;
+  }
+  .auth-section .auth-div .auth-root-div .auth-center-side::after {
+    display: none;
+  }
+  .auth-section .auth-div .auth-root-div .auth-center-side .auth-content-div {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .auth-section .auth-div .auth-root-div .auth-center-side {
+    width: 540px;
+  }
+  .auth-section .auth-div .auth-root-div .auth-center-side::after {
+    height: 296px;
+    width: 140%;
+    left: -20%;
+  }
+}
+/*# sourceMappingURL=auth-style.css.map */

@@ -1,0 +1,535 @@
+.add-outline-book-root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.add-outline-book-root .add-outline-book-inner-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: calc(100vh - 500px);
+}
+
+.add-outline-book-root .add-outline-main-div {
+  padding: 30px 40px 20px 40px;
+  margin: 0 0 16px 0;
+  position: relative;
+  background-color: #f8faff;
+  border-radius: 9px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-left {
+  width: calc(100% - 60px);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right {
+  width: 60px;
+  padding: 0 0 0 10px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right .btn.btn-add {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #d0d4da;
+  border-radius: 8px;
+  color: #246ae0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right .btn.btn-add span.material-icons {
+  font-size: 30px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right .btn.btn-add:hover {
+  border: 1px solid #246ae0;
+  color: #fff;
+  background: #246ae0;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .border-chapter-main {
+  background: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn.btn-white-border {
+  font-weight: 700;
+  font-size: 18px;
+  color: #246ae0;
+  letter-spacing: -0.15px;
+  border: 1px solid #d0d4da;
+  border-radius: 9px;
+  background-color: transparent;
+  width: 100%;
+  min-height: 52px;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div {
+  width: 100%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control {
+  padding: 5px 40px 5px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #949daa;
+  letter-spacing: -0.15px;
+  margin: 0;
+  border: none;
+  min-height: 60px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control::-webkit-input-placeholder {
+  color: rgba(0, 20, 54, 0.3);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control::-moz-placeholder {
+  color: rgba(0, 20, 54, 0.3);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control:-ms-input-placeholder {
+  color: rgba(0, 20, 54, 0.3);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control:-moz-placeholder {
+  color: rgba(0, 20, 54, 0.3);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-80 {
+  padding-right: 80px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-50 {
+  padding-right: 50px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.disabled {
+  pointer-events: none;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  min-height: 60px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn.btn-cancel {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  color: #949dab;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: none;
+  width: 32px;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn.btn-cancel:hover {
+  color: #001436;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #949dab;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: none;
+  width: 32px;
+  min-height: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right .material-icons {
+  font-size: 28px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right:hover {
+  color: #001436;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  width: 40%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-header-top {
+  padding: 10px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid rgba(208, 212, 218, 0.2);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row:last-child {
+  border-radius: 0 0 9px 9px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row:last-child .form-input-div .form-control {
+  border-radius: 0 0 9px 9px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active {
+  border-color: #eaeffa;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active .form-input-div .form-control {
+  color: #246ae0;
+  background: #eef3fd;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active .btn-group-div .btn.btn-cancel {
+  color: #246ae0;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active .btn-group-div .btn-right {
+  color: #246ae0;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active .btn-group-div .btn-right .material-icons {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active::before {
+  content: "";
+  height: 60px;
+  width: 12px;
+  position: absolute;
+  display: inline-block;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background-color: rgba(208, 212, 218, 0.2);
+  right: -16px;
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active::after {
+  content: "";
+  height: 60px;
+  width: 12px;
+  position: absolute;
+  display: inline-block;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background-color: #fff;
+  right: -17px;
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div {
+  padding: 0 0 0 16px;
+  margin: 0 0 20px 0;
+  position: relative;
+  width: 60%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-header-top {
+  padding: 10px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-header-top.arrow-left-active::after {
+  content: "";
+  height: 60px;
+  width: 12px;
+  position: absolute;
+  display: inline-block;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background-color: #fff;
+  top: 5px;
+  left: -11px;
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #f5f5f5;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row .form-input-div .form-control {
+  color: rgba(0, 20, 54, 0.8);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row .btn-group-div .btn.btn-cancel {
+  color: rgba(0, 20, 54, 0.8);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row .btn-group-div .btn-right {
+  color: rgba(0, 20, 54, 0.8);
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row:last-child {
+  border-radius: 0 0 9px 9px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row:last-child .form-input-div .form-control {
+  border-radius: 0 0 9px 9px;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row.active .form-input-div .form-control {
+  color: #246ae0;
+  background: #eef3fd;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row.active .btn-group-div .btn.btn-cancel {
+  color: #246ae0;
+}
+
+.add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-body-main .right-chap-group-row.active .btn-group-div .btn-right {
+  color: #246ae0;
+}
+
+@media (max-width: 767px) {
+  .add-outline-book-root {
+    padding: 0;
+  }
+  .add-outline-book-root .add-outline-main-div {
+    padding: 15px 15px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-left {
+    width: 100%;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-left .input-box-effect {
+    margin-bottom: 6px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-top-div .add-outline-top-row .input-box-top-right .btn.btn-add {
+    width: 100%;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn.btn-white-border {
+    font-size: 14px;
+    min-height: 42px;
+    padding: 5px 15px 3px 15px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control {
+    font-size: 14px;
+    padding: 5px 40px 5px 15px;
+    min-height: 40px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-80 {
+    padding-right: 70px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-50 {
+    padding-right: 40px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div {
+    min-height: 40px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn.btn-cancel {
+    font-size: 16px;
+    width: 24px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right {
+    width: 24px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right .material-icons {
+    font-size: 22px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div {
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active::after {
+    display: none;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div {
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-header-top.arrow-left-active::after {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .add-outline-book-root {
+    padding: 0;
+  }
+  .add-outline-book-root .add-outline-main-div {
+    padding: 15px 15px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn.btn-white-border {
+    font-size: 14px;
+    min-height: 42px;
+    padding: 5px 15px 3px 15px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control {
+    font-size: 14px;
+    padding: 5px 40px 5px 15px;
+    min-height: 50px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-80 {
+    padding-right: 70px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .form-input-div .form-control.pr-50 {
+    padding-right: 40px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div {
+    min-height: 50px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn.btn-cancel {
+    font-size: 16px;
+    width: 24px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right {
+    width: 24px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .btn-group-div .btn-right .material-icons {
+    font-size: 22px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active::before {
+    height: 50px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .left-chapter-div .left-chap-body-main .left-chap-group-row.active::after {
+    height: 50px;
+  }
+  .add-outline-book-root .add-outline-main-div .add-outline-body-div .add-outline-body-row .right-chapter-div .right-chap-header-top.arrow-left-active::after {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=add-outline-area-style.css.map */

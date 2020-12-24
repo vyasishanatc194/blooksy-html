@@ -1,0 +1,129 @@
+.tabs-root-common {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+
+  .tabs-header-common {
+    padding: 0;
+    margin: 0 0 20px 0;
+    position: relative;
+    display: block;
+
+    .nav-tabs {
+      border-bottom: 0 solid rgba(255, 255, 255, 0.34);
+
+      .nav-link {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-color: transparent;
+        font-weight: 700;
+        padding: 20px 10px 20px 10px;
+        margin: 0 0 2px 0;
+        font-size: 18px;
+        line-height: 24px;
+        color: rgba(0, 20, 54, 0.3);
+        letter-spacing: 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 20, 54, 0.3);
+        transition: all 0.8s;
+        position: relative;
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &.active {
+          color: #001436;
+          background-color: transparent;
+          border-bottom-color: #001436;
+
+          &::before {
+            content: "";
+            height: 2px;
+            width: calc(100% + 2px);
+            border-radius: 0;
+            background-color: #001436;
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: -1px;
+          }
+        }
+
+        &:hover {
+          color: #001436;
+          background-color: transparent;
+        }
+      }
+
+      .nav-item {
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .tabs-body-common {
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs-root-common {
+    .tabs-header-common {
+      .nav-tabs {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        .nav-link {
+          padding: 10px 10px;
+          margin: 0 0 2px 0;
+          font-size: 12px;
+          line-height: 24px;
+          min-height: 48px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .tabs-root-common {
+      .tabs-header-common {
+        .nav-tabs {
+          .nav-link {
+            padding: 10px 8px;
+            font-size: 10px;
+
+            &.active {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tabs-root-common {
+    .tabs-header-common {
+      .nav-tabs {
+        .nav-link {
+          padding: 10px 10px;
+          margin: 0 0 2px 0;
+          font-size: 14px;
+          line-height: 24px;
+          min-height: 54px;
+        }
+      }
+    }
+  }
+}

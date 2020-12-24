@@ -1,0 +1,235 @@
+.white-container-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.white-container-section .white-container-div {
+  padding: 60px 0;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.white-container-root-div {
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.08);
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.08);
+  border-radius: 9px;
+  min-height: 250px;
+}
+
+.white-container-root-div .logo-img-icon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.white-container-root-div .logo-img-icon .img-logo-icon {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.white-container-root-div .white-container-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div {
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-line-div {
+  padding: 0;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-line-div h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  color: #001436;
+  letter-spacing: -0.28px;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 2px 0;
+  margin: 0 0 10px 0;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-line-div h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color: #246ae0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-title-inner-div {
+  padding: 0;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-title-inner-div h2 {
+  padding: 0;
+  margin: 0 0 5px 0;
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #001436;
+  letter-spacing: -0.2px;
+  text-align: center;
+  display: block;
+}
+
+.white-container-root-div .white-container-inner .heading-title-div .heading-title-inner-div p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: rgba(0, 20, 54, 0.4);
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root {
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root .center-container-div {
+  max-width: 850px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root .form-root-main .mb-6 {
+  margin-bottom: 6px;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root .form-root-main.pr-24 {
+  padding-right: 24px;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root .charater-img-div .charater-thumb-div .img-char-full {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.white-container-root-div .white-container-inner .center-div-book-root.min-height-vm-500 {
+  min-height: calc(100vh - 600px);
+}
+
+.white-container-root-div .white-container-inner .bottom-btn-div {
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.white-container-root-div .white-container-inner .bottom-btn-div .bottom-btn-inner-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.white-container-root-div .white-container-inner .bottom-btn-div .bottom-btn-inner-div .mr-10 {
+  margin-right: 10px;
+}
+
+.white-container-root-div .white-container-inner .bottom-btn-div .bottom-btn-inner-div .min-width-180 {
+  min-width: 180px;
+}
+
+@media (max-width: 767px) {
+  .white-container-section .white-container-div {
+    padding: 20px 0;
+  }
+  .white-container-root-div .logo-img-icon {
+    top: 15px;
+    left: 15px;
+  }
+  .white-container-root-div .logo-img-icon .img-logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .white-container-root-div .white-container-inner .heading-title-div .heading-line-div h1 {
+    font-size: 24px;
+  }
+  .white-container-root-div .white-container-inner .heading-title-div .heading-line-div h1::before {
+    max-width: 100px;
+  }
+  .white-container-root-div .white-container-inner .heading-title-div .heading-title-inner-div h2 {
+    font-size: 18px;
+  }
+  .white-container-root-div .white-container-inner .heading-title-div .heading-title-inner-div p {
+    font-size: 18px;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root {
+    margin: 0 0 40px 0;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root .center-container-div {
+    max-width: 100%;
+    padding: 0;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root .form-root-main {
+    margin: 0 0 35px 0;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root .form-root-main.pr-24 {
+    padding-right: 0;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root .charater-img-div .charater-thumb-div {
+    text-align: center;
+  }
+  .white-container-root-div .white-container-inner .center-div-book-root .charater-img-div .charater-thumb-div .img-char-full {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .white-container-root-div .white-container-inner .bottom-btn-div {
+    padding: 0;
+  }
+  .white-container-root-div .white-container-inner .bottom-btn-div .bottom-btn-inner-div {
+    padding: 0;
+    margin: 0 auto 10px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .white-container-root-div .white-container-inner .bottom-btn-div .bottom-btn-inner-div .min-width-180 {
+    min-width: 120px;
+  }
+}
+/*# sourceMappingURL=new-book-details-style.css.map */

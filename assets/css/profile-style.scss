@@ -1,0 +1,27 @@
+.edit-profile-section {
+  padding: 15px;
+  margin: 0;
+  position: relative;
+
+  .edit-profile-div {
+    padding: 5px 0 0 0;
+    margin: 0;
+    position: relative;
+
+    .create-book-header-div {
+      padding: 0;
+      margin: 0 0 20px 0;
+      position: relative;
+
+      .create-book-header-inner {
+        h2 {
+          font-weight: 600;
+          font-size: 24px;
+          color: #282828;
+          letter-spacing: -0.2px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

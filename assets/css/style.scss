@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+@import "./default-style";
+@import "./custom-icons";
+
+/* customs general css */
+
+.display_show {
+  display: block;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+.main-middle-area.pt-custom-0 {
+  padding-top: 0;
+}
+
+.mlr-5 {
+  margin-right: -5px !important;
+  margin-left: -5px !important;
+}
+
+.plr-5 {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+
+.mlr-8 {
+  margin-right: -8px !important;
+  margin-left: -8px !important;
+}
+
+.plr-8 {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+
+.mlr-10 {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+.plr-10 {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.mlr-20 {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+
+.plr-20 {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.btn-common-primary {
+  background: #246ae0;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  letter-spacing: 0;
+  min-height: 50px;
+  padding: 6px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+
+  .bg-custom-icon {
+    margin: 0 10px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(36, 105, 224, 0.2);
+    outline: none;
+  }
+
+  &.disabled {
+    opacity: 0.39;
+  }
+}
+
+.btn-common-white {
+  background: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #001436;
+  letter-spacing: 0;
+  min-height: 50px;
+  padding: 6px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+  border: 1px solid #d0d4da;
+
+  .bg-custom-icon {
+    margin: 0 10px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #001436;
+    box-shadow: 0 5px 10px 0 rgba(0, 20, 54, 0.05);
+    outline: none;
+  }
+}
+
+.btn-primary-link {
+  color: #246ae0;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #001436;
+  }
+}
+
+/* End of general css */
+.main-middle-area {
+  padding: 90px 0 0 0;
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .max-md-1920 {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed-custom {
+    overflow: hidden;
+  }
+
+  .position-fixed-remove {
+    .slideInDown {
+      animation: none;
+    }
+  }
+
+  .main-middle-area {
+    padding: 70px 0 0 0;
+  }
+
+  .btn.btn-common {
+    font-size: 16px;
+    min-height: 44px;
+    padding: 6px 20px 5px 20px;
+
+    &.min-width-280 {
+      min-width: 200px;
+    }
+
+    &::before {
+      height: 37px;
+      top: 8px;
+    }
+  }
+}
+
+// custom animation
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+} // custom animation
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed-custom {
+    overflow: hidden;
+  }
+
+  .position-fixed-remove {
+    .slideInDown {
+      animation: none;
+    }
+  }
+
+  .main-middle-area {
+    padding: 70px 0 0 0;
+  }
+
+  .btn.btn-common {
+    font-size: 16px;
+    min-height: 44px;
+    padding: 6px 20px 5px 20px;
+
+    &.min-width-280 {
+      min-width: 200px;
+    }
+
+    &::before {
+      height: 37px;
+      top: 8px;
+    }
+  }
+}

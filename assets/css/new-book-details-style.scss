@@ -1,0 +1,250 @@
+.white-container-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .white-container-div {
+    padding: 60px 0;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.white-container-root-div {
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.08);
+  border-radius: 9px;
+  min-height: 250px;
+
+  .logo-img-icon {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    .img-logo-icon {
+      object-fit: contain;
+    }
+  }
+
+  .white-container-inner {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .heading-title-div {
+      padding: 40px 0 0 0;
+      margin: 0 auto;
+      position: relative;
+
+      .heading-line-div {
+        padding: 0;
+        margin: 0 0 40px 0;
+        position: relative;
+
+        h1 {
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 1.5;
+          color: #001436;
+          letter-spacing: -0.28px;
+          text-align: center;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          padding: 0 0 2px 0;
+          margin: 0 0 10px 0;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            background-color: #246ae0;
+            width: 100%;
+            max-width: 180px;
+          }
+        }
+      }
+
+      .heading-title-inner-div {
+        padding: 0;
+        margin: 0 0 40px 0;
+        position: relative;
+
+        h2 {
+          padding: 0;
+          margin: 0 0 5px 0;
+          position: relative;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.4;
+          color: #001436;
+          letter-spacing: -0.2px;
+          text-align: center;
+          display: block;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 1.4;
+          color: rgba(0, 20, 54, 0.4);
+          letter-spacing: -0.2px;
+          text-align: center;
+        }
+      }
+    }
+
+    .center-div-book-root {
+      padding: 0;
+      margin: 0 0 30px 0;
+      position: relative;
+
+      .center-container-div {
+        max-width: 850px;
+        padding: 0 20px;
+        margin: 0 auto;
+      }
+
+      .form-root-main {
+        .mb-6 {
+          margin-bottom: 6px;
+        }
+
+        &.pr-24 {
+          padding-right: 24px;
+        }
+      }
+
+      .charater-img-div {
+        .charater-thumb-div {
+          .img-char-full {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      &.min-height-vm-500 {
+        min-height: calc(100vh - 600px);
+      }
+    }
+
+    .bottom-btn-div {
+      padding: 10px 10px 10px 10px;
+      margin: 0;
+      position: relative;
+      width: 100%;
+
+      .bottom-btn-inner-div {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        .mr-10 {
+          margin-right: 10px;
+        }
+
+        .min-width-180 {
+          min-width: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .white-container-section {
+    .white-container-div {
+      padding: 20px 0;
+    }
+  }
+
+  .white-container-root-div {
+    .logo-img-icon {
+      top: 15px;
+      left: 15px;
+
+      .img-logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .white-container-inner {
+      .heading-title-div {
+        .heading-line-div {
+          h1 {
+            font-size: 24px;
+
+            &::before {
+              max-width: 100px;
+            }
+          }
+        }
+
+        .heading-title-inner-div {
+          h2 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .center-div-book-root {
+        margin: 0 0 40px 0;
+
+        .center-container-div {
+          max-width: 100%;
+          padding: 0;
+        }
+
+        .form-root-main {
+          margin: 0 0 35px 0;
+
+          &.pr-24 {
+            padding-right: 0;
+          }
+        }
+
+        .charater-img-div {
+          .charater-thumb-div {
+            text-align: center;
+
+            .img-char-full {
+              max-width: 200px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      .bottom-btn-div {
+        padding: 0;
+
+        .bottom-btn-inner-div {
+          padding: 0;
+          margin: 0 auto 10px auto;
+          justify-content: center;
+
+          .min-width-180 {
+            min-width: 120px;
+          }
+        }
+      }
+    }
+  }
+}

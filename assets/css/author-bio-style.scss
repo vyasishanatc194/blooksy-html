@@ -1,0 +1,154 @@
+.author-bio-section {
+  padding: 5px 0 0 0;
+  margin: 0;
+  position: relative;
+
+  .author-bio-div {
+    padding: 25px 30px 20px 30px;
+    margin: 0 0 10px 0;
+    position: relative;
+    background: #fff;
+    box-shadow: 9px 9px 20px 0 rgba(1, 40, 106, 0.08);
+    border-radius: 10px;
+  }
+
+  .author-bio-top-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .heading-div-txt {
+      margin: 0 0 20px 0;
+
+      h2 {
+        font-weight: 700;
+        font-size: 18px;
+        color: #001436;
+        letter-spacing: -0.15px;
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+
+  .author-bio-body-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+}
+
+.author-color-card {
+  padding: 0;
+  margin: 0 0 10px 0;
+  position: relative;
+
+  .author-color-card-inner {
+    background: #f8faff;
+    border-radius: 10px;
+
+    .author-card-top {
+      padding: 16px 20px;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e5e5;
+
+      .author-card-top-left {
+        width: calc(100% - 150px);
+
+        .text-title-div {
+          h2 {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;
+            color: rgba(0, 20, 54, 0.8);
+
+            .span-icon {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              margin: 0 10px 0 0;
+            }
+          }
+        }
+      }
+
+      .author-card-top-right {
+        width: 150px;
+
+        .link-div {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: wrap;
+
+          .link {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;
+            color: rgba(36, 105, 224, 0.8);
+          }
+        }
+      }
+    }
+
+    .author-card-body {
+      padding: 20px 20px 10px 20px;
+      margin: 0;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .author-bio-section {
+    .author-bio-div {
+      padding: 20px 15px 20px 15px;
+    }
+  }
+
+  .author-color-card {
+    .author-color-card-inner {
+      .author-card-top {
+        padding: 12px 12px;
+
+        .author-card-top-left {
+          width: calc(100% - 95px);
+
+          .text-title-div {
+            h2 {
+              font-size: 14px;
+              line-height: 1.4;
+
+              .span-icon {
+                margin: 0 5px 0 0;
+
+                .bg-custom-icon {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
+          }
+        }
+
+        .author-card-top-right {
+          width: 95px;
+
+          .link-div {
+            .link {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

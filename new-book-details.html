@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>New Book Details | Blooksy</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#191919">
+<meta name="msapplication-navbutton-color" content="#191919">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/proxima-nova/proxima-nova-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/new-book-details-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper new-book-details-wrapper">
+
+	<div class="main-middle-area pt-custom-0">
+    
+    <section class="white-container-section" id="new-book-details-section">
+      <div class="white-container-div">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+
+              <div class="white-container-root-div">
+
+                <div class="logo-img-icon">
+                  <img src="assets/images/logo-icon.svg" class="img-fluid img-logo-icon" alt="logo" />
+                </div>
+
+                <div class="white-container-inner">
+
+                  <div class="heading-title-div">
+                    <div class="heading-line-div">
+                      <h1>Welcome, User </h1>  
+                    </div>
+                    
+                    <div class="heading-title-inner-div">
+                      <h2>New Book Details</h2>
+                      <p>Start Writing your first book</p>
+                    </div>
+                  </div>  
+
+                  <div class="center-div-book-root min-height-vm-500">
+                    <div class="center-container-div">
+                      <div class="row mlr-8">
+
+                        <div class="col-lg-8 col-md-8 plr-8">
+                          <div class="form-root-main pr-24">
+                            <form class="form-root">
+
+                              <div class="row mlr-8">
+                                <div class="col-lg-12 col-md-12 plr-8">
+                                  <div class="form-group input-box-effect mb-6">
+                                    <label class="input-box-label">
+                                      <input type="text" class="form-input" placeholder="&nbsp;">
+                                      <span class="label-text">Title</span>
+                                      <span class="border"></span>
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 plr-8">
+                                  <div class="form-group input-box-effect mb-6">
+                                    <label class="input-box-label">
+                                      <input type="text" class="form-input" placeholder="&nbsp;">
+                                      <span class="label-text">Author (optional)</span>
+                                      <span class="border"></span>
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 plr-8 d-none">
+                                  <div class="custom-file custom-file-group">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Add Cover Image (optional)</label>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 plr-8">
+                          
+                          <div class="charater-img-div">
+                            <div class="charater-thumb-div">
+                              <img src="assets/images/character/blooksy-character-img03.svg" alt="img" class="img-fluid img-char-full" />
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bottom-btn-div">
+                    <div class="bottom-btn-inner-div">
+                      <a href="#" class="btn btn-common-white min-width-180 mr-10"> Back </a>
+                      <a href="#" class="btn btn-common-primary min-width-180"> Done </a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script> 
+
+<script>
+    
+  $(document).ready(function () {
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+  });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Edit Profile | Blooksy</title>
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#191919">
+  <meta name="msapplication-navbutton-color" content="#191919">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+  <link href='assets/images/favicon.png' rel='shortcut icon'>
+  <link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/proxima-nova/proxima-nova-font.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+  <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/dashboard.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/profile-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper" class="wrapper dashboard-wrapper">
+
+    <!-- left-side -->
+    <div class="right-side-nav">
+      <div class="right-side-nav-inner">
+
+        <div class="nav-logo-section">
+          <a href="dashboard.html" class="dash-logo">
+            <img src="assets/images/logo-white-icon.svg" class="logo-icon logo-icon-white" alt="logo" />
+          </a>
+          
+          <!--  mobile  -->
+          <div class="mobile-menu-div desktop-hidden">
+            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+              <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+            </button>
+          </div>
+          <!--  End of mobile  -->
+
+        </div>
+
+        <div class="right-side-menu" id="dashboard-menu-clone">
+          <div class="right-side-inner">
+
+            <!--  mobile  -->
+            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+            <div class="menu-cloned-one desktop-hidden" id="menu-cloned-one">
+              <div class="nav-dashboard-right">
+                <div class="user-drop-down">
+                  
+                  <div class="dropdown drop-left dropdown-custom-top">
+                    <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="user-profile">
+                        <div class="user-img">
+                          <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                        </div>
+                        <div class="user-info">
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <ul>
+                        <li>
+                          <a class="dropdown-item" href="#"> 
+                            <span class="bg-custom-icon user-black-icon"></span> Edit Profile 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"> 
+                            <span class="bg-custom-icon diamond-black-icon"></span> Subscription 
+                          </a>
+                        </li>
+                        <li class="logout-li"><a class="dropdown-item" href="login.html"> <span class="bg-custom-icon logout-black-icon"></span> Logout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  End of mobile  -->
+
+            <div class="side-nav-item accordion" id="menu-collapse">
+              <ul class="main-listing">
+
+                <li class="nav-header">
+                  <div class="inner-title-heading">
+                    <h2>Main menu</h2>
+                  </div>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-normal" href="#" title="My Books">
+                    <span class="icon-nav">
+                      <i class="bg-custom-icon book-icon"></i>
+                    </span>
+                    <span class="text-collapse-menu">My Books</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#" title="Author’s Bio">
+                    <span class="icon-nav">
+                      <i class="bg-custom-icon user-icon"></i>
+                    </span>
+                    <span class="text-collapse-menu">Author’s Bio</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!--  mobile  -->
+        <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+        <!--  End of mobile  -->
+
+      </div>
+    </div>
+    <!--  End of left-side  -->
+
+    <!-- Begin page content -->
+    <main role="main" class="middle-area-dashboard pt-custom-0 main-dashboard">
+      <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard header-dashboard02">
+          <nav class="navbar navbar-dark">
+            <div class="container-fluid d-block">
+
+              <div class="row col-header-row">
+                <div class="col-lg-12 col-12">
+
+                  <div class="nav-dashboard-row">
+
+                    <div class="nav-dashboard-left">
+                      
+                      <div class="nav-top-view-div-row">
+  
+                        <div class="searching-div-nav w-100">
+                          <div class="searching-div">
+                            <div class="form-group form-searching-group active">
+                              <input type="text" class="form-control form-search display-none" placeholder="Search for anything" id="searching-input">
+                              <button type="button" class="btn-search" id="searching-top">
+                                <i class="bg-custom-icon search-small-icon searching-img"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                    </div>
+
+                    <div class="nav-dashboard-right">
+                      <div class="user-drop-down mobile-hidden">
+                        <div class="dropdown drop-left dropdown-custom-top">
+                          <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-profile">
+                              <div class="user-img">
+                                <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                              </div>
+                              <div class="user-info">
+                              </div>
+                            </div>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul>
+                              <li>
+                                <a class="dropdown-item" href="#"> 
+                                  <span class="bg-custom-icon user-black-icon"></span> Edit Profile 
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"> 
+                                  <span class="bg-custom-icon diamond-black-icon"></span> Subscription 
+                                </a>
+                              </li>
+                              <li class="logout-li"><a class="dropdown-item" href="login.html"> <span class="bg-custom-icon logout-black-icon"></span> Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        </header>
+        <!-- End of header -->
+
+        <!--  main  -->
+        <div class="main-section">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <div class="main-body-inner-div" id="main-body-inner-div">
+
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+
+                        <section class="edit-profile-section">
+                          <div class="edit-profile-div">
+
+                              <div class="center-div-book-root">
+                                <div class="center-container-div">
+
+                                  <div class="row mlr-8">
+                                    <div class="col-lg-12 col-md-12 plr-8">
+                                      <div class="edit-profile-top-div">
+                                        <div class="heading-div-txt">
+                                          <h2>Edit Profile</h2>
+                                        </div>
+                                      </div>
+                                    </div>  
+                                  </div>
+
+                                  <div class="row mlr-8">
+            
+                                    <div class="col-lg-12 col-md-12 plr-8">
+                                      <div class="form-root-main">
+                                        <form class="form-root">
+            
+                                          <div class="row mlr-8">
+                                            <div class="col-lg-6 col-md-6 plr-8">
+                                              <div class="form-group input-box-effect mb-6">
+                                                <label class="input-box-label">
+                                                  <input type="text" class="form-input" placeholder="&nbsp;">
+                                                  <span class="label-text">First Name</span>
+                                                  <span class="border"></span>
+                                                </label>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 plr-8">
+                                              <div class="form-group input-box-effect mb-6">
+                                                <label class="input-box-label">
+                                                  <input type="text" class="form-input" placeholder="&nbsp;">
+                                                  <span class="label-text">Last Name</span>
+                                                  <span class="border"></span>
+                                                </label>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 plr-8">
+                                              <div class="form-group input-box-effect mb-6">
+                                                <label class="input-box-label">
+                                                  <input type="text" class="form-input" placeholder="&nbsp;">
+                                                  <span class="label-text">Last Name</span>
+                                                  <span class="border"></span>
+                                                </label>
+                                              </div>
+                                            </div>
+            
+                                            <div class="col-lg-12 col-md-12 plr-8">
+                                              <div class="form-group input-box-effect mb-6">
+                                                <label class="input-box-label">
+                                                  <input type="text" class="form-input" placeholder="&nbsp;">
+                                                  <span class="label-text">Author (optional)</span>
+                                                  <span class="border"></span>
+                                                </label>
+                                              </div>
+                                            </div>
+            
+                                            <div class="col-lg-12 col-md-12 plr-8 d-none">
+                                              <div class="custom-file custom-file-group">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Add Cover Image (optional)</label>
+                                              </div>
+                                            </div>
+            
+                                          </div>
+            
+                                        </form>
+                                      </div>
+                                    </div>
+            
+                                  </div>
+
+                                  <div class="row mlr-8">
+                                    <div class="col-lg-12 col-md-12 plr-8">
+                                      
+                                      <div class="bottom-btn-tabs-div">
+                                        <div class="bottom-btn-inner-div">
+                                          <a href="#" class="btn btn-common-white min-width-180 mr-10"> Back </a>
+                                          <a href="#" class="btn btn-common-primary min-width-180"> Next </a>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+            
+                            </div>
+
+                          </div>
+                        </section>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+      </div>
+    </main>
+
+  </div><!-- end of wrapper -->
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  
+  <script>
+
+    $(document).ready(function () {
+      $(".btn-search").click(function(){
+        $(this).parent().addClass("active");
+      });
+
+      $(".btn-cancle").click(function(){
+        $(this).parent().removeClass("active");
+      });
+      // $("#tooltip-access-code").tooltip({ html: true, placement: "bottom", trigger: "click"});    
+
+      $(".gl-btn-div #btn-list-view").click(function(){
+        $(this).addClass("active");
+        $(".gl-btn-div #btn-grid-view").removeClass("active");
+        $("#grid-view-body").addClass("list-view-area").removeClass("grid-view-area");
+      });
+
+      $(".gl-btn-div #btn-grid-view").click(function(){
+        $(this).addClass("active");
+        $(".gl-btn-div #btn-list-view").removeClass("active");
+        $("#grid-view-body").addClass("grid-view-area").removeClass("list-view-area");
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

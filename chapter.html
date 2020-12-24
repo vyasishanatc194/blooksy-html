@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter | Blooksy</title>
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#191919">
+  <meta name="msapplication-navbutton-color" content="#191919">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+  <link href='assets/images/favicon.png' rel='shortcut icon'>
+  <link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/proxima-nova/proxima-nova-font.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+  <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/dashboard.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/scratch-pad-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper" class="wrapper dashboard-wrapper">
+
+    <!-- left-side -->
+    <div class="right-side-nav">
+      <div class="right-side-nav-inner">
+
+        <div class="nav-logo-section">
+          <a href="dashboard.html" class="dash-logo">
+            <img src="assets/images/logo-white-icon.svg" class="logo-icon logo-icon-white" alt="logo" />
+          </a>
+          
+          <!--  mobile  -->
+          <div class="mobile-menu-div desktop-hidden">
+            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+              <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+            </button>
+          </div>
+          <!--  End of mobile  -->
+
+        </div>
+
+        <div class="right-side-menu" id="dashboard-menu-clone">
+          <div class="right-side-inner">
+
+            <!--  mobile  -->
+            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+            <div class="menu-cloned-one desktop-hidden" id="menu-cloned-one">
+              <div class="nav-dashboard-right">
+                <div class="user-drop-down">
+                  
+                  <div class="dropdown drop-left dropdown-custom-top">
+                    <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="user-profile">
+                        <div class="user-img">
+                          <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                        </div>
+                        <div class="user-info">
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <ul>
+                        <li>
+                          <a class="dropdown-item" href="#"> 
+                            <span class="bg-custom-icon user-black-icon"></span> Edit Profile 
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"> 
+                            <span class="bg-custom-icon diamond-black-icon"></span> Subscription 
+                          </a>
+                        </li>
+                        <li class="logout-li"><a class="dropdown-item" href="login.html"> <span class="bg-custom-icon logout-black-icon"></span> Logout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  End of mobile  -->
+
+            <div class="side-nav-item accordion" id="menu-collapse">
+              <ul class="main-listing">
+
+                <li class="nav-header">
+                  <div class="inner-title-heading">
+                    <h2>Main menu</h2>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#" title="My Books">
+                    <span class="icon-nav">
+                      <i class="bg-custom-icon book-icon"></i>
+                    </span>
+                    <span class="text-collapse-menu">My Books</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#" title="Author’s Bio">
+                    <span class="icon-nav">
+                      <i class="bg-custom-icon user-icon"></i>
+                    </span>
+                    <span class="text-collapse-menu">Author’s Bio</span>
+                  </a>
+                </li>
+
+                <li class="nav-header mt-12">
+                  <div class="inner-title-heading">
+                    <h2>Getting Things Done</h2>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link nav-toggle pr-75" href="#category-step01" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="">
+                    <span class="icon-nav">
+                      <i class="bg-custom-icon quill-icon"></i>
+                    </span>
+                    <span class="text-collapse-menu">Step 1 <span class="arrow-span"><i class="fe fe-chevron-right"></i></span> </span>
+                  </a>
+
+                  <div class="add-nav-icon-bx">
+                    <a href="new-book-details.html" class="btn-add-transparent">
+                      <i class="fe fe-plus"></i>
+                    </a>
+                  </div>
+                  
+
+                  <div class="collapse show" id="category-step01" style="" data-parent="#menu-collapse">
+                    <ul class="nav sub-nav">
+                      
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Front Matter/Prelims</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Intro</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item" id="menu-collapse-sub">
+                        <a class="nav-link nav-toggle pr-75" href="#category-sub-step01" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="menu-collapse-sub01">
+                          <span class="text-collapse-menu">Chapter 1 <span class="arrow-span"><i class="fe fe-chevron-right"></i></span> </span>
+                        </a>
+
+                        <div class="add-nav-icon-bx">
+                          <a href="#" class="btn-add-transparent">
+                            <i class="fe fe-plus"></i>
+                          </a>
+                        </div>
+      
+                        <div class="collapse show" id="category-sub-step01" style="" data-parent="#menu-collapse-sub">
+                          <ul class="nav sub-nav">
+                            
+                            <li class="nav-item active">
+                              <a href="#" class="nav-link active">
+                                <span class="icon-nav">
+                                  <i class="bg-custom-icon sub-directory-right-arrow-icon"></i>
+                                </span>
+                                <span class="text-collapse-menu">Story 1</span>
+                              </a>
+
+                              <div class="add-nav-icon-bx r-21">
+                                <a href="#" class="btn-add-transparent">
+                                  <i class="fe fe-plus"></i>
+                                </a>
+                              </div>
+                            </li>
+      
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                <span class="icon-nav">
+                                  <i class="bg-custom-icon sub-directory-right-arrow-icon"></i>
+                                </span>
+                                <span class="text-collapse-menu">Story 2</span>
+                              </a>
+                            </li>
+      
+                          </ul>
+                        </div>
+      
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Chapter 2</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Chapter 3</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Conclusion</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="text-collapse-menu">Back Matter</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!--  mobile  -->
+        <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+        <!--  End of mobile  -->
+
+      </div>
+    </div>
+    <!--  End of left-side  -->
+
+    <!-- Begin page content -->
+    <main role="main" class="middle-area-dashboard pt-custom-0 main-dashboard">
+      <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard header-scratch-pad-page" id="scratch-pad-active-header">
+          <nav class="navbar navbar-dark">
+            <div class="container-fluid d-block">
+
+              <div class="row col-header-row">
+                <div class="col-lg-12 col-12">
+
+                  <div class="nav-dashboard-row">
+
+                    <div class="nav-dashboard-left">
+                      
+                      <div class="nav-top-view-div-row">
+
+                        <div class="list-top-navigation-div">
+                          <ul class="list-group-ul list-group-horizontal-ul">
+                            <li class="list-group-item-li"> 
+  
+                              <div class="dropdown dropdown-custom-top">
+                                <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="text">Edit</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <ul>
+                                    <li>
+                                      <a class="dropdown-item" data-toggle="modal" data-target="#choose-page-size-modal" href="#"> 
+                                        <span class="full-width-100">
+                                          <span class="text-left-span">Page Size</span>
+                                          <span class="text-right-span">5’’x 8’’</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">Undo</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">Redo</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">Cut</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">Copy</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+  
+                            </li>
+                            <li class="list-group-item-li"> 
+                              <div class="dropdown dropdown-custom-top">
+                                <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="text">Insert</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <ul>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">New Outline</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">New Chapter</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">New Story</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">New Image</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"> 
+                                        <span class="text-span">New Page</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item-li"> 
+                              <a class="btn btn-default" href="#">
+                                <span class="text">Export</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+  
+                        <div class="searching-div-nav">
+                          <div class="searching-div">
+                            <div class="form-group form-searching-group">
+                              <input type="text" class="form-control form-search display-none" placeholder="Search for anything" id="searching-input">
+                              <button type="button" class="btn-cancle display-none" id="searching-cancel">
+                                <i class="fe fe-x"></i> 
+                              </button>
+                              <button type="button" class="btn-search" id="searching-top">
+                                <i class="bg-custom-icon search-small-icon searching-img"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="add-new-btn-div">
+                          <div class="dropdown dropdown-custom-top">
+                            <a class="btn btn-default btn-default-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text">+Add New</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <ul>
+                                <li>
+                                  <a class="dropdown-item" href="#"> 
+                                    <span class="text-span">Outline</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"> 
+                                    <span class="text-span">Chapter</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"> 
+                                    <span class="text-span">Story</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"> 
+                                    <span class="text-span">Page</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                    </div>
+
+                    <div class="nav-dashboard-right">
+                      <div class="user-drop-down mobile-hidden">
+                        <div class="dropdown drop-left dropdown-custom-top">
+                          <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-profile">
+                              <div class="user-img">
+                                <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                              </div>
+                              <div class="user-info">
+                              </div>
+                            </div>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul>
+                              <li>
+                                <a class="dropdown-item" href="#"> 
+                                  <span class="bg-custom-icon user-black-icon"></span> Edit Profile 
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"> 
+                                  <span class="bg-custom-icon diamond-black-icon"></span> Subscription 
+                                </a>
+                              </li>
+                              <li class="logout-li"><a class="dropdown-item" href="login.html"> <span class="bg-custom-icon logout-black-icon"></span> Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        </header>
+        <!-- End of header -->
+
+        <!--  main  -->
+        <div class="main-section scratch-pade-page-section" id="scratch-pad-active-main">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <div class="main-body-inner-div" id="main-body-inner-div">
+
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+
+                        <div class="top-link-div">
+                          <div class="top-link-right-div">
+                            <ul class="top-list-group-ul">
+                              <li class="top-list-group-item-li"> 
+                                <a class="btn btn-default" href="#">
+                                  <span class="span-icon">
+                                    <span class="bg-custom-icon export-black-icon"></span>
+                                  </span>
+                                  <span class="text">Export</span>
+                                </a>
+                              </li>
+                              <li class="top-list-group-item-li"> 
+                                <a class="btn btn-default" href="#">
+                                  <span class="span-icon">
+                                    <span class="material-icons"> share </span>
+                                  </span>
+                                  <span class="text">Share</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="editor-page-view-div">
+                          <div class="editor-page-view-inner">
+
+                            <div class="center-editor-view-div">
+                              <div class="tool-top-info-div">
+                                <a href="#" class="tooltip-link" id="tooltip-access-code" data-toggle="tooltip" title="<div class='text'>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</div>"> <i class="fe fe-info fe-icon"></i> </a>
+                              </div>
+
+                              <div class="editor-textarea-div">
+                                <textarea cols="30" rows="20" class="form-control editor-textarea">Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proi eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia</textarea>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="bottom-editor-btn-div">
+                            <div class="center-btn-div">
+                              <a href="#" class="add-new-link link"><span class="material-icons"> add </span> Add New Page</a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+        <div class="scratch-pad-root" id="scratch-pad-root">
+          <div class="scratch-pad-inner">
+
+            <div class="scratch-pad-left">
+              
+              <div class="scratch-pad-content-root">
+                <div class="heading-txt-div">
+                  <h2>ScratchPad</h2>
+                </div>
+                <div class="scratch-pad-content-body">
+                  <div class="form-text-area-pad">
+                    <div class="form-group">
+                      <textarea class="form-control" cols="30" rows="10">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="scratch-pad-right">
+              <div class="scratch-box-list-div">
+                <div class="scratch-box-item">
+                  <button class="scratch-box-item-btn" id="scratch-box-item-btn">
+                    <div class="scratch-box-iteam-top">
+                      <span class="icon-span-round">
+                        <i class="bg-custom-icon scratch-notes-icon"></i>
+                      </span>
+                    </div>
+                    <div class="scratch-box-iteam-bottom">
+                      <p> Scratch.. </p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div><!-- end of wrapper -->
+
+<!-- The Choose Page Size modal -->
+<div class="modal modal-custom fade" id="choose-page-size-modal">
+  <div class="modal-dialog modal-dialog-centered mx-400-width">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <h4 class="modal-title">Choose Page Size</h4>
+        </div>
+        <div class="modal-header-right">
+          <button type="button" class="close" data-dismiss="modal"> <i class="fe fe-x"></i> </button>
+        </div>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+          
+        <div class="modal-body-inner">
+          
+          <div class="form-custom-div">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                
+                <div class="radio-btn-div-root">
+                  <div class="radio-btn-div-inner">
+
+                    <div class="row-div">
+                      <div class="custom-control custom-radio custom-radio-big">
+                        <input type="radio" class="custom-control-input" id="ps-customRadio" name="page-size-radio">
+                        <label class="custom-control-label" for="ps-customRadio">5’’ x 8’’</label>
+                        <div class="span-block-img">
+                          <img src="assets/images/page-size/page-size-small-img-01.svg" class="img-fluid img-size" alt="page size" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row-div">
+                      <div class="custom-control custom-radio custom-radio-big">
+                        <input type="radio" class="custom-control-input" id="ps-customRadio2" name="page-size-radio">
+                        <label class="custom-control-label" for="ps-customRadio2">5.5’’ x 8.5’’</label>
+                        <div class="span-block-img">
+                          <img src="assets/images/page-size/page-size-small-img-02.svg" class="img-fluid img-size" alt="page size" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row-div">
+                      <div class="custom-control custom-radio custom-radio-big">
+                        <input type="radio" class="custom-control-input" id="ps-customRadio3" name="page-size-radio">
+                        <label class="custom-control-label" for="ps-customRadio3">6’’ x 9’’</label>
+                        <div class="span-block-img">
+                          <img src="assets/images/page-size/page-size-small-img-03.svg" class="img-fluid img-size" alt="page size" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row-div">
+                      <div class="custom-control custom-radio custom-radio-big">
+                        <input type="radio" class="custom-control-input" id="ps-customRadio4" name="page-size-radio">
+                        <label class="custom-control-label" for="ps-customRadio4">7’’ x 10’’</label>
+                        <div class="span-block-img">
+                          <img src="assets/images/page-size/page-size-small-img-04.svg" class="img-fluid img-size" alt="page size" />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer-bottom d-none">
+          <div class="modal-footer-bottom-row">
+            <button type="button" class="btn btn-cancel text-uppercase mr-10" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-common-primary text-uppercase" data-toggle="modal" data-target="#app-success-modal" data-dismiss="modal">Add</button>
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scratch-pad-js.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  
+  <script>
+
+    $(document).ready(function () {
+      $(".btn-search").click(function(){
+        $(this).parent().addClass("active");
+      });
+
+      $(".btn-cancle").click(function(){
+        $(this).parent().removeClass("active");
+      });
+      // $("#tooltip-access-code").tooltip({ html: true, placement: "bottom", trigger: "click"});    
+    });
+
+  </script>
+
+</body>
+
+</html>
