@@ -1,0 +1,302 @@
+.common-container-section {
+  position: relative;
+}
+
+.common-container-section .common-container-div {
+  padding: 50px 0 10px 0;
+  margin: 0;
+  position: relative;
+}
+
+.common-container-section .common-container-div .logo-img-icon {
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.common-container-section .common-container-div .logo-img-icon .logo-link {
+  display: block;
+}
+
+.common-container-section .common-container-header-div .common-container-header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.common-container-section .common-container-header-div .common-container-header-inner .common-container-header-left {
+  width: 70px;
+}
+
+.common-container-section .common-container-header-div .common-container-header-inner .common-container-header-left .back-div .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #01286a;
+  letter-spacing: -0.12px;
+}
+
+.common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center {
+  width: calc(100% - 70px);
+  padding: 0 70px 0 0;
+}
+
+.common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #282828;
+  letter-spacing: -0.2px;
+  text-align: center;
+  display: block;
+}
+
+.common-container-section .common-container-body-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.subscription-center-root {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subscription-center-root .container-custom {
+  max-width: calc(100% - 200px);
+}
+
+.subscription-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.subscription-div .col-width-20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.subscription-div .subscription-box-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  border: 1px solid #d0d4da;
+  border-radius: 6px;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-top {
+  padding: 35px 20px 15px 20px;
+  margin: 0;
+  position: relative;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-top .image-div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-top .image-div .img-fluid {
+  height: 158px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle {
+  padding: 5px 20px 15px 20px;
+  margin: 0;
+  position: relative;
+  min-height: calc(100vh - 430px);
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle .subscription-box-card-middle-inner {
+  min-height: 400px;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #246ae0;
+  letter-spacing: -0.37px;
+  display: block;
+  margin: 0 0 0 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #282828;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.15px;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle .check-ul-div .check-ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 20, 54, 0.7);
+  letter-spacing: -0.12px;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 4px 0 0 32px;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-middle .check-ul-div .check-ul li::before {
+  content: "\e92b";
+  background: rgba(0, 20, 54, 0.8);
+  height: 22px;
+  width: 22px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: #fff;
+  font-family: "Feather";
+  speak: none;
+  font-style: normal;
+  font-weight: 800;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-bottom {
+  padding: 12px;
+  margin: 0;
+  position: relative;
+}
+
+.subscription-div .subscription-box-card .subscription-box-card-bottom .btn-common-primary {
+  border-radius: 7px;
+}
+
+@media (min-width: 1025px) and (max-width: 1420px) {
+  .common-container-section .common-container-div .logo-img-icon {
+    padding: 10px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-top {
+    padding: 25px 20px 15px 20px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle {
+    padding: 5px 15px 15px 15px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle .subscription-box-card-middle-inner {
+    min-height: 350px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle p {
+    font-size: 14px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle h2 {
+    font-size: 36px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle .check-ul-div .check-ul li {
+    font-size: 12px;
+    padding: 2px 0 0 28px;
+    line-height: 16px;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle .check-ul-div .check-ul li::before {
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .common-container-section .common-container-div {
+    padding: 80px 0 10px 0;
+  }
+  .common-container-section .common-container-div .logo-img-icon {
+    padding: 10px;
+  }
+  .common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center {
+    width: calc(100% - 70px);
+    padding: 0;
+  }
+  .common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center h3 {
+    font-size: 18px;
+    text-align: right;
+  }
+  .subscription-center-root .container-custom {
+    max-width: 100%;
+  }
+  .subscription-div .col-width-20 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .subscription-div .subscription-box-card {
+    margin: 0 0 20px 0;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle {
+    min-height: auto;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle .subscription-box-card-middle-inner {
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .common-container-section .common-container-div {
+    padding: 80px 0 10px 0;
+  }
+  .common-container-section .common-container-div .logo-img-icon {
+    padding: 10px;
+  }
+  .common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center {
+    width: calc(100% - 70px);
+    padding: 0;
+  }
+  .common-container-section .common-container-header-div .common-container-header-inner .common-container-header-center h3 {
+    font-size: 18px;
+    text-align: right;
+  }
+  .subscription-center-root .container-custom {
+    max-width: 100%;
+  }
+  .subscription-div .col-width-20 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .subscription-div .subscription-box-card {
+    margin: 0 0 20px 0;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle {
+    min-height: auto;
+  }
+  .subscription-div .subscription-box-card .subscription-box-card-middle .subscription-box-card-middle-inner {
+    min-height: 350px;
+  }
+}
+/*# sourceMappingURL=subscription-style.css.map */

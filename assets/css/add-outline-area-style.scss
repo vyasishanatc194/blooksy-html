@@ -148,7 +148,6 @@
         }
 
         .btn-group-div {
-          display: flex;
           flex-wrap: wrap;
           position: absolute;
           top: 0;
@@ -540,7 +539,7 @@
                   &::before {
                     height: 50px;
                   }
-                  
+
                   &::after {
                     height: 50px;
                   }
