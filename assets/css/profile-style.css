@@ -10,17 +10,130 @@
   position: relative;
 }
 
-.edit-profile-section .edit-profile-div .create-book-header-div {
+.edit-profile-section .edit-profile-div .edit-book-root {
+  padding: 30px 30px 20px 30px;
+  margin: 0;
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 10px 10px;
+}
+
+.edit-profile-section .edit-profile-div .edit-book-root .edit-book-container-div {
+  max-width: calc(100% - 160px);
+  margin: 0 auto;
+}
+
+.edit-profile-section .edit-profile-div .edit-book-root .form-root-main {
+  min-height: calc(100vh - 290px);
+}
+
+.edit-profile-section .edit-profile-div .edit-profile-top-div {
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
   position: relative;
 }
 
-.edit-profile-section .edit-profile-div .create-book-header-div .create-book-header-inner h2 {
-  font-weight: 600;
-  font-size: 24px;
-  color: #282828;
-  letter-spacing: -0.2px;
+.edit-profile-section .edit-profile-div .edit-profile-top-div .heading-div-txt h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #01286a;
+  letter-spacing: -0.15px;
   line-height: 1.4;
+  display: block;
+}
+
+.edit-profile-section .edit-profile-div .edit-bottom-btn-div {
+  padding: 10px 0 10px 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.edit-profile-section .edit-profile-div .edit-bottom-btn-div .edit-bottom-inner-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.edit-profile-section .edit-profile-div .edit-bottom-btn-div .edit-bottom-inner-div .min-width-180 {
+  min-width: 180px;
+}
+
+.edit-profile-section .edit-profile-div .edit-bottom-btn-div .edit-bottom-inner-div .mr-10 {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .edit-profile-section {
+    padding: 0 5px;
+  }
+  .edit-profile-section .edit-profile-div .edit-profile-top-div {
+    margin: 0 0 15px 0;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root {
+    padding: 30px 20px 20px 20px;
+    margin: 0 0 20px 0;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .edit-book-container-div {
+    max-width: 100%;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main {
+    min-height: calc(100vh - 375px);
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group {
+    padding: 10px 0 30px 0;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .circle {
+    width: 66px;
+    height: 66px;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .circle label.filelabel-icon {
+    height: 32px;
+    width: 32px;
+    bottom: 1px;
+    right: -11px;
+    border: 2px solid #fff;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .circle label.filelabel-icon .material-icons {
+    font-size: 16px;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .circle .profile-pic {
+    width: 66px;
+    height: 66px;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div {
+    width: calc(100% - 66px);
+    padding: 0 0 0 26px;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div h3 {
+    font-size: 18px;
+    margin: 0 0 2px 0;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div p {
+    font-size: 13px;
+  }
+  .edit-profile-section .edit-profile-div .edit-bottom-btn-div .edit-bottom-inner-div .min-width-180 {
+    min-width: 100px;
+    min-height: 44px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .edit-profile-section .edit-profile-div .edit-book-root .edit-book-container-div {
+    max-width: calc(100% - 60px);
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main {
+    min-height: calc(100vh - 375px);
+  }
 }
 /*# sourceMappingURL=profile-style.css.map */

@@ -8,18 +8,151 @@
     margin: 0;
     position: relative;
 
-    .create-book-header-div {
+    .edit-book-root {
+      padding: 30px 30px 20px 30px;
+      margin: 0;
+      background: #fff;
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.04);
+      border-radius: 10px 10px;
+
+      .edit-book-container-div {
+        max-width: calc(100% - 160px);
+        margin: 0 auto;
+      }
+
+      .form-root-main {
+        min-height: calc(100vh - 290px);
+      }
+    }
+
+    .edit-profile-top-div {
       padding: 0;
-      margin: 0 0 20px 0;
+      margin: 0 0 30px 0;
       position: relative;
 
-      .create-book-header-inner {
+      .heading-div-txt {
         h2 {
-          font-weight: 600;
-          font-size: 24px;
-          color: #282828;
-          letter-spacing: -0.2px;
+          font-weight: 700;
+          font-size: 18px;
+          color: #01286a;
+          letter-spacing: -0.15px;
           line-height: 1.4;
+          display: block;
+        }
+      }
+    }
+
+    .edit-bottom-btn-div {
+      padding: 10px 0 10px 0;
+      margin: 0;
+      position: relative;
+      width: 100%;
+
+      .edit-bottom-inner-div {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        .min-width-180 {
+          min-width: 180px;
+        }
+
+        .mr-10 {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .edit-profile-section {
+    padding: 0 5px;
+
+    .edit-profile-div {
+      .edit-profile-top-div {
+        margin: 0 0 15px 0;
+      }
+
+      .edit-book-root {
+        padding: 30px 20px 20px 20px;
+        margin: 0 0 20px 0;
+
+        .edit-book-container-div {
+          max-width: 100%;
+        }
+
+        .form-root-main {
+          min-height: calc(100vh - 375px);
+
+          .profile-pic-upload-group {
+            padding: 10px 0 30px 0;
+
+            .circle {
+              width: 66px;
+              height: 66px;
+
+              label.filelabel-icon {
+                height: 32px;
+                width: 32px;
+                bottom: 1px;
+                right: -11px;
+                border: 2px solid #fff;
+
+                .material-icons {
+                  font-size: 16px;
+                }
+              }
+
+              .profile-pic {
+                width: 66px;
+                height: 66px;
+              }
+            }
+
+            .text-div {
+              width: calc(100% - 66px);
+              padding: 0 0 0 26px;
+
+              h3 {
+                font-size: 18px;
+                margin: 0 0 2px 0;
+              }
+
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      .edit-bottom-btn-div {
+        .edit-bottom-inner-div {
+          .min-width-180 {
+            min-width: 100px;
+            min-height: 44px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .edit-profile-section {
+    .edit-profile-div {
+      .edit-book-root {
+        .edit-book-container-div {
+          max-width: calc(100% - 60px);
+        }
+
+        .form-root-main {
+          min-height: calc(100vh - 375px);
         }
       }
     }
