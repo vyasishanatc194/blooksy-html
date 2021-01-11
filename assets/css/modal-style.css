@@ -21,6 +21,10 @@
   max-width: 400px;
 }
 
+.modal .mx-472-width {
+  max-width: 472px;
+}
+
 .modal-custom .modal-content {
   border-radius: 12px;
 }
@@ -95,12 +99,77 @@
   margin: 0;
 }
 
+.modal-custom-plan .modal-header-right {
+  padding: 30px 50px 5px 50px;
+}
+
+.modal-custom-plan .modal-header-right .close {
+  padding: 0;
+  margin: 0;
+  color: #01286a;
+  opacity: 1;
+  text-align: right;
+}
+
+.modal-custom-plan .ptop-5 {
+  padding-top: 5px;
+}
+
+.modal-custom-plan .text-custom-div {
+  padding: 0 10px;
+}
+
+.modal-custom-plan .text-custom-div .header-txt-div {
+  margin: 0 0 30px 0;
+}
+
+.modal-custom-plan .text-custom-div .header-txt-div h2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+.modal-custom-plan .text-custom-div .modal-footer-bottom .min-width-180 {
+  min-width: 180px;
+}
+
+.modal-custom-plan .text-custom-div .modal-footer-bottom .mr-10 {
+  margin-right: 10px;
+}
+
+.modal-custom-plan .modal-footer-bottom {
+  margin: 0 0 30px 0;
+}
+
+.modal-custom-plan .block {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .modal-custom .modal-header {
     padding: 23px 20px 20px 20px;
   }
   .modal-custom .modal-body {
     padding: 20px 20px;
+  }
+  .modal-custom-plan .text-custom-div {
+    padding: 0;
+  }
+  .modal-custom-plan .text-custom-div .modal-footer-bottom .min-width-180 {
+    min-width: 100px;
+  }
+  .modal-custom-plan .text-custom-div .modal-footer-bottom .btn {
+    min-height: 44px;
+    font-size: 16px;
+    min-width: calc(50% - 5px);
+  }
+  .modal-custom-plan .modal-header-right {
+    padding: 20px 20px 5px 20px;
   }
 }
 /*# sourceMappingURL=modal-style.css.map */

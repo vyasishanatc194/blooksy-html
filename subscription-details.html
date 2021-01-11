@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Payment Details | Blooksy</title>
+<title>Subscription Details | Blooksy</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#191919">
 <meta name="msapplication-navbutton-color" content="#191919">
@@ -19,6 +19,7 @@
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
 <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/subscription-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
@@ -54,7 +55,7 @@
                     </div>
 
                     <div class="common-container-header-center">
-                      <h3>Payment Details</h3>
+                      <h3>Subscription Details</h3>
                     </div>
 
                   </div>
@@ -78,6 +79,19 @@
                                     <form class="form-root">
         
                                       <div class="row mlr-8">
+                                        <div class="col-lg-12 col-md-12 plr-8">
+                                          <div class="plan-txt-header-div">
+                                            <div class="plan-txt-header-inner">
+                                              <div class="plan-txt-header-left">
+                                                <h4>Current Plan</h4>
+                                              </div>
+                                              <div class="plan-txt-header-right">
+                                                <a href="#" class="link remove-link" data-toggle="modal" data-target="#remove-plan-modal">Remove Plan</a>
+                                              </div>
+                                            </div>    
+                                          </div>
+                                        </div>
+
                                         <div class="col-lg-12 col-md-12 plr-8">
                                           <div class="form-group input-box-effect mb-6">
                                             <label class="input-box-label">
@@ -136,7 +150,7 @@
         
                                 <div class="col-lg-4 col-md-5 plr-8">
                                   
-                                  <div class="card-dark-plan-div">
+                                  <div class="card-dark-plan-div mt-50">
                                     <div class="card-dark-plan-inner">
                                       <p>Little Penner</p>
                                       <h2> <span class="txt-big">$9</span> <span class="span-normal">/ Month</span> </h2>
@@ -156,7 +170,7 @@
                           <div class="bottom-btn-div">
                             <div class="bottom-btn-inner-div">
                               <a href="#" class="btn btn-common-white min-width-180 mr-10"> Cancel </a>
-                              <a href="#" class="btn btn-common-primary min-width-180"> Confirm Payment </a>
+                              <a href="#" class="btn btn-common-primary min-width-180"> Save </a>
                             </div>
                           </div>
 
@@ -180,11 +194,64 @@
 
 </div><!-- end of wrapper -->
 
+<!-- The Choose Page Size modal -->
+<div class="modal modal-custom modal-custom-plan fade" id="remove-plan-modal">
+  <div class="modal-dialog modal-dialog-centered mx-472-width">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header-right">
+        <button type="button" class="close" data-dismiss="modal"> <i class="fe fe-x"></i> </button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body ptop-5">
+          
+        <div class="modal-body-inner">
+          
+          <div class="text-custom-div">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                
+                <div class="header-txt-div">
+                  <h2>
+                    <span class="block">Are you sure you wanna</span>
+                    <span class="block">remove this plan?</span>
+                  </h2>
+                </div>
+                
+                <div class="modal-footer-bottom">
+                  <div class="modal-footer-bottom-row">
+                    <button type="button" class="btn btn-common-white min-width-180 mr-10" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-common-primary min-width-180">Yes</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.mask.js"></script>
 <script src="assets/js/custom.js"></script> 
+
+<script>
+
+  // $(document).ready(function () {
+  //   $("#remove-plan-modal").modal("show");
+  // });
+
+</script>
 
 </body>
 </html>

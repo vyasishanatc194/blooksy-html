@@ -198,6 +198,167 @@
   border-radius: 7px;
 }
 
+.plan-common-white-div .plan-common-white-inner {
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.08);
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.08);
+  border-radius: 9px;
+  min-height: 250px;
+}
+
+.plan-common-white-div .plan-txt-header-div {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.plan-common-white-div .plan-txt-header-div .plan-txt-header-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.plan-common-white-div .plan-txt-header-div .plan-txt-header-inner h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #282828;
+  letter-spacing: -0.2px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.plan-common-white-div .plan-txt-header-div .plan-txt-header-inner .remove-link {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fd5252;
+  letter-spacing: -0.15px;
+  line-height: 30px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.plan-common-white-div .plan-center-div-root {
+  padding: 60px 0;
+  min-height: calc(100vh - 250px);
+}
+
+.plan-common-white-div .plan-center-div-root .plan-center-container-div {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.plan-common-white-div .plan-center-div-root .form-root-main {
+  padding: 0 24px 0 0;
+}
+
+.plan-common-white-div .plan-center-div-root .form-root-main .form-group {
+  margin-bottom: 12px;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #01286a;
+  border-radius: 10px;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div.mt-50 {
+  margin-top: 50px;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div .card-dark-plan-inner {
+  padding: 30px 25px;
+  margin: 0;
+  background: url(../images/icons/pattern-plan-01.svg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div .card-dark-plan-inner p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: -0.15px;
+  margin: 0 0 5px 0;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div .card-dark-plan-inner h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: -0.37px;
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div .card-dark-plan-inner h2 span.span-normal {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.15px;
+  margin: 0 0 0 5px;
+}
+
+.plan-common-white-div .plan-center-div-root .card-dark-plan-div .card-dark-plan-inner .link-div .link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+  letter-spacing: -0.15px;
+  text-decoration: underline;
+}
+
+.plan-common-white-div .bottom-btn-div {
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.plan-common-white-div .bottom-btn-div .bottom-btn-inner-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.plan-common-white-div .bottom-btn-div .bottom-btn-inner-div .mr-10 {
+  margin-right: 10px;
+}
+
+.plan-common-white-div .bottom-btn-div .bottom-btn-inner-div .min-width-180 {
+  min-width: 180px;
+}
+
 @media (min-width: 1025px) and (max-width: 1420px) {
   .common-container-section .common-container-div .logo-img-icon {
     padding: 10px;
@@ -262,6 +423,35 @@
   }
   .subscription-div .subscription-box-card .subscription-box-card-middle .subscription-box-card-middle-inner {
     min-height: 150px;
+  }
+  .plan-common-white-div .plan-center-div-root {
+    padding: 20px 0;
+    min-height: auto;
+  }
+  .plan-common-white-div .plan-center-div-root .plan-center-container-div {
+    max-width: 100%;
+    padding: 0;
+  }
+  .plan-common-white-div .plan-center-div-root .form-root-main {
+    padding: 0;
+  }
+  .plan-common-white-div .plan-center-div-root .card-dark-plan-div.mt-50 {
+    margin-top: 0;
+  }
+  .plan-common-white-div .plan-txt-header-div .plan-txt-header-inner h4 {
+    font-size: 20px;
+  }
+  .plan-common-white-div .plan-txt-header-div .plan-txt-header-inner .remove-link {
+    font-size: 14px;
+  }
+  .plan-common-white-div .bottom-btn-div {
+    padding: 0;
+  }
+  .plan-common-white-div .bottom-btn-div .bottom-btn-inner-div .min-width-180 {
+    min-width: 100px;
+    font-size: 14px;
+    padding: 6px 15px 5px 15px;
+    min-height: 44px;
   }
 }
 

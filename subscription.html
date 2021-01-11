@@ -218,17 +218,5 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script> 
 
-<script>
-    
-  $(document).ready(function () {
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function() {
-      var fileName = $(this).val().split("\\").pop();
-      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-  });
-
-</script>
-
 </body>
 </html>
