@@ -5,6 +5,8 @@ $(document).ready(function () {
     $(".right-side-nav").addClass("active");
     $(".backdrop-menu-layer").addClass("active");
     $(".nav-dashboard-right").addClass("active");
+
+    $("#scratch-pad-root").addClass("d-none");
   });
 
   $("#menu-closed").click(function () {
@@ -12,6 +14,8 @@ $(document).ready(function () {
     $(".right-side-nav").removeClass("active");
     $(".backdrop-menu-layer").removeClass("active");
     $(".nav-dashboard-right").removeClass("active");
+
+    $("#scratch-pad-root").removeClass("d-none");
   });
 
   /* End of mobile menu */
@@ -23,5 +27,7 @@ $(document).ready(function () {
     $(".left-side-nav").removeClass("active");
     $(".backdrop-menu-layer").removeClass("active");
     $(".nav-dashboard-right").removeClass("active");
+
+    $("#scratch-pad-root").removeClass("d-none");
   });
 });

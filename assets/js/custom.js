@@ -4,6 +4,8 @@ function openNav() {
   $(".cd-shadow-layer").addClass("displayblock");
   $(".wrapper").addClass("position-fixed-custom");
   $("body").addClass("overflow-fixed");
+
+  
 }
 
 function closeNav() {
@@ -12,6 +14,8 @@ function closeNav() {
   $(".cd-shadow-layer").removeClass("displayblock");
   $(".wrapper").removeClass("position-fixed-custom");
   $("body").removeClass("overflow-fixed");
+
+  
 }
 
 $(document).ready(function () {

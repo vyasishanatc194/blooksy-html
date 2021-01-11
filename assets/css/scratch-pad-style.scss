@@ -11,6 +11,23 @@
   z-index: 9999;
   height: calc(100vh - 71px);
 
+  &.d-none {
+    transition: all 0.8s;
+    animation: animation-key01 0.8s;
+
+    @keyframes animation-key01 {
+      0% {
+        display: none;
+        opacity: 0;
+      }
+
+      100% {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+
   .scratch-pad-inner {
     position: relative;
     width: 100%;
