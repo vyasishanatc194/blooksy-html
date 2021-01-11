@@ -118,6 +118,12 @@
     font-size: 18px;
     margin: 0 0 2px 0;
   }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div .link.edit-btn {
+    margin: -2px 0 0 10px;
+  }
+  .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div .link.edit-btn .material-icons {
+    font-size: 18px;
+  }
   .edit-profile-section .edit-profile-div .edit-book-root .form-root-main .profile-pic-upload-group .text-div p {
     font-size: 13px;
   }

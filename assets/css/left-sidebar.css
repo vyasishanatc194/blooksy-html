@@ -608,6 +608,18 @@
   font-family: "Proxima Nova Rg";
 }
 
+.right-side-nav .right-side-menu.text-fixed-remove .right-side-inner .inner-title-heading h2 {
+  display: none;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+.right-side-nav .right-side-menu.text-fixed-remove .right-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
+  display: none;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -681,18 +693,6 @@
 }
 
 .right-side-nav.collapse-menu .right-side-menu .right-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
-  display: none;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-}
-
-.right-side-nav .right-side-menu.text-fixed-remove .right-side-inner .inner-title-heading h2 {
-  display: none;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-}
-
-.right-side-nav .right-side-menu.text-fixed-remove .right-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
   display: none;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;

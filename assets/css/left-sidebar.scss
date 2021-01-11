@@ -361,6 +361,30 @@
       }
     }
   }
+
+  .right-side-menu.text-fixed-remove {
+    .right-side-inner {
+      .inner-title-heading {
+        h2 {
+          display: none;
+          animation: fadeIn 1s;
+        }
+      }
+
+      .side-nav-item {
+        ul {
+          li {
+            .nav-link {
+              .text-collapse-menu {
+                display: none;
+                animation: fadeIn 1s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @keyframes fadeIn {
@@ -425,32 +449,6 @@
   .right-side-menu .right-side-inner .side-nav-item ul li .nav-link .text-collapse-menu {
     display: none;
     animation: fadeIn 1s;
-  }
-}
-
-.right-side-nav {
-  .right-side-menu.text-fixed-remove {
-    .right-side-inner {
-      .inner-title-heading {
-        h2 {
-          display: none;
-          animation: fadeIn 1s;
-        }
-      }
-
-      .side-nav-item {
-        ul {
-          li {
-            .nav-link {
-              .text-collapse-menu {
-                display: none;
-                animation: fadeIn 1s;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 
