@@ -128,6 +128,67 @@
   }
 }
 
+.btn.btn-general-primary {
+  background: #fff;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #001436;
+  letter-spacing: 0;
+  min-height: 60px;
+  padding: 6px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+  position: relative;
+
+  .text {
+    z-index: 2;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    background: #01286a;
+    border-radius: 30px;
+    filter: blur(34px);
+    display: block;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    width: calc(100% - 20px);
+  }
+
+  &::after {
+    content: "";
+    background: #fff;
+    border-radius: 40px;
+    display: block;
+    height: 60px;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 4px);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: #fff;
+    background: #01286a;
+
+    &::after {
+      content: "";
+      background: #01286a;
+    }
+  }
+
+  &.min-width-280 {
+    min-width: 280px;
+  }
+}
+
 /* End of general css */
 .main-middle-area {
   padding: 90px 0 0 0;
@@ -155,6 +216,28 @@
 
   body.overflow-fixed {
     overflow-y: hidden;
+  }
+
+  .btn.btn-general-primary {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 50px;
+    padding: 6px 30px 5px 30px;
+
+    &::after {
+      height: 50px;
+    }
+
+    &::before {
+      top: 10px;
+      height: 35px;
+      filter: blur(15px);
+      opacity: 0.8;
+    }
+
+    &.min-width-280 {
+      min-width: 210px;
+    }
   }
 
   .position-fixed-custom {
@@ -242,6 +325,28 @@
   .position-fixed-remove {
     .slideInDown {
       animation: none;
+    }
+  }
+
+  .btn.btn-general-primary {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 50px;
+    padding: 6px 30px 5px 30px;
+
+    &::after {
+      height: 50px;
+    }
+
+    &::before {
+      top: 10px;
+      height: 35px;
+      filter: blur(15px);
+      opacity: 0.8;
+    }
+
+    &.min-width-280 {
+      min-width: 210px;
     }
   }
 

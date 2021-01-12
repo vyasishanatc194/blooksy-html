@@ -147,6 +147,10 @@ body {
   max-width: 1280px;
 }
 
+.container-1200 {
+  max-width: 1230px;
+}
+
 .container-fluid-1920 {
   max-width: 1735px;
 }
@@ -511,6 +515,75 @@ body {
   color: #001436;
 }
 
+.btn.btn-general-primary {
+  background: #fff;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #001436;
+  letter-spacing: 0;
+  min-height: 60px;
+  padding: 6px 30px 5px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  position: relative;
+}
+
+.btn.btn-general-primary .text {
+  z-index: 2;
+  position: relative;
+}
+
+.btn.btn-general-primary::before {
+  content: "";
+  background: #01286a;
+  border-radius: 30px;
+  -webkit-filter: blur(34px);
+          filter: blur(34px);
+  display: block;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  width: calc(100% - 20px);
+}
+
+.btn.btn-general-primary::after {
+  content: "";
+  background: #fff;
+  border-radius: 40px;
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 4px);
+}
+
+.btn.btn-general-primary:hover, .btn.btn-general-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  background: #01286a;
+}
+
+.btn.btn-general-primary:hover::after, .btn.btn-general-primary:focus::after {
+  content: "";
+  background: #01286a;
+}
+
+.btn.btn-general-primary.min-width-280 {
+  min-width: 280px;
+}
+
 /* End of general css */
 .main-middle-area {
   padding: 90px 0 0 0;
@@ -537,6 +610,25 @@ body {
   }
   body.overflow-fixed {
     overflow-y: hidden;
+  }
+  .btn.btn-general-primary {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 50px;
+    padding: 6px 30px 5px 30px;
+  }
+  .btn.btn-general-primary::after {
+    height: 50px;
+  }
+  .btn.btn-general-primary::before {
+    top: 10px;
+    height: 35px;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    opacity: 0.8;
+  }
+  .btn.btn-general-primary.min-width-280 {
+    min-width: 210px;
   }
   .position-fixed-custom {
     overflow: hidden;
@@ -611,6 +703,25 @@ body {
   .position-fixed-remove .slideInDown {
     -webkit-animation: none;
             animation: none;
+  }
+  .btn.btn-general-primary {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 50px;
+    padding: 6px 30px 5px 30px;
+  }
+  .btn.btn-general-primary::after {
+    height: 50px;
+  }
+  .btn.btn-general-primary::before {
+    top: 10px;
+    height: 35px;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    opacity: 0.8;
+  }
+  .btn.btn-general-primary.min-width-280 {
+    min-width: 210px;
   }
   .main-middle-area {
     padding: 70px 0 0 0;
