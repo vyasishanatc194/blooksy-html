@@ -12,8 +12,6 @@ header .header-div {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   min-height: 70px;
-  /* main changes */
-  /* End of main changes */
 }
 
 header .header-div .logo-div {
