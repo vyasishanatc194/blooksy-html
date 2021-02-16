@@ -1,0 +1,320 @@
+.page-not-found-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #246ae0;
+  min-height: 100vh;
+}
+
+.page-not-found-section::before {
+  content: "";
+  background: url(../images/background/auth-bg-pattern.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+.page-not-found-section .page-not-found-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div {
+  padding: 60px 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side {
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 610px;
+  max-width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side::before {
+  content: "";
+  background: url(../images/character/blooksy-character-img02.png) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  display: inline-block;
+  height: 264px;
+  width: 198px;
+  position: absolute;
+  -webkit-animation: character-animation 2s none 0s ease-out;
+          animation: character-animation 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation {
+  0% {
+    -webkit-transform: rotate(0) translateX(-80%) translateY(80%);
+            transform: rotate(0) translateX(-80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+@keyframes character-animation {
+  0% {
+    -webkit-transform: rotate(0) translateX(-80%) translateY(80%);
+            transform: rotate(0) translateX(-80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side::after {
+  content: "";
+  background: url(../images/character/auth-bottom-img-01.svg) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  display: inline-block;
+  height: 296px;
+  width: 150%;
+  position: absolute;
+  bottom: -10px;
+  left: -30%;
+  -webkit-animation: character-animation02 2s none 0s ease-out;
+          animation: character-animation02 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation02 {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+            transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0) scale(1);
+            transform: rotate(0) translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes character-animation02 {
+  0% {
+    -webkit-transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+            transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0) scale(1);
+            transform: rotate(0) translateX(0) translateY(0) scale(1);
+  }
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side.auth-rt-img-div::before {
+  top: 60px;
+  right: -90px;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side.auth-lt-img-div::before {
+  background: url(../images/character/blooksy-character-img01.png) no-repeat;
+  background-position: top left;
+  top: 60px;
+  left: -90px;
+  -webkit-animation: character-animation03 2s none 0s ease-out;
+          animation: character-animation03 2s none 0s ease-out;
+}
+
+@-webkit-keyframes character-animation03 {
+  0% {
+    -webkit-transform: rotate(0) translateX(80%) translateY(80%);
+            transform: rotate(0) translateX(80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+@keyframes character-animation03 {
+  0% {
+    -webkit-transform: rotate(0) translateX(80%) translateY(80%);
+            transform: rotate(0) translateX(80%) translateY(80%);
+  }
+  99% {
+    -webkit-transform: rotate(0) translateX(0) translateY(0);
+            transform: rotate(0) translateX(0) translateY(0);
+  }
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div {
+  padding: 25px 40px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+  border-radius: 9px;
+  position: relative;
+  z-index: 3;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .auth-logo-div {
+  padding: 35px 0 0 0;
+  margin: 0 0 45px 0;
+  position: relative;
+  width: 100%;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .auth-logo-div .img-responsive {
+  width: 115px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .heading-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .heading-div h1 {
+  font-weight: 900;
+  font-size: 120px;
+  color: #296ae0;
+  margin: 0 0 10px 0;
+  display: block;
+  width: 100%;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .heading-div h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #0c286a;
+  margin: 0 0 10px 0;
+  display: block;
+  width: 100%;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .heading-div p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 20, 54, 0.45);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .heading-div .general-form-btn {
+  width: 100%;
+  margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .bottom-row {
+  margin: 0 0 0 0;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side {
+  text-align: center;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a4a4a;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p .btn-primary-link {
+  padding: 0;
+  margin: 0 0 0 5px;
+  line-height: inherit;
+}
+
+.page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div .bottom-row .text-center-reg-side p .btn-primary-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .page-not-found-section .page-not-found-div .page-not-found-root-div {
+    padding: 10px 10px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side::before {
+    display: none;
+  }
+  .page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side::after {
+    display: none;
+  }
+  .page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side .auth-content-div {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side {
+    width: 540px;
+  }
+  .page-not-found-section .page-not-found-div .page-not-found-root-div .auth-center-side::after {
+    height: 296px;
+    width: 140%;
+    left: -20%;
+  }
+}
+/*# sourceMappingURL=page-not-flound-style.css.map */

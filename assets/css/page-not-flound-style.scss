@@ -1,0 +1,269 @@
+.page-not-found-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #246ae0;
+  min-height: 100vh;
+
+  &::before {
+    content: "";
+    background: url(../images/background/auth-bg-pattern.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .page-not-found-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .page-not-found-root-div {
+      padding: 60px 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+
+      .auth-center-side {
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        width: 610px;
+        max-width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &::before {
+          content: "";
+          background: url(../images/character/blooksy-character-img02.png) no-repeat;
+          background-size: contain;
+          background-position: top right;
+          display: inline-block;
+          height: 264px;
+          width: 198px;
+          position: absolute;
+          animation: character-animation 2s none 0s ease-out;
+
+          @keyframes character-animation {
+            0% {
+              transform: rotate(0) translateX(-80%) translateY(80%);
+            }
+
+            99% {
+              transform: rotate(0) translateX(0) translateY(0);
+            }
+          }
+        }
+
+        &::after {
+          content: "";
+          background: url(../images/character/auth-bottom-img-01.svg) no-repeat;
+          background-size: contain;
+          background-position: top right;
+          display: inline-block;
+          height: 296px;
+          width: 150%;
+          position: absolute;
+          bottom: -10px;
+          left: -30%;
+          animation: character-animation02 2s none 0s ease-out;
+
+          @keyframes character-animation02 {
+            0% {
+              transform: rotate(0) translateX(0) translateY(-20%) scale(0.5);
+            }
+
+            99% {
+              transform: rotate(0) translateX(0) translateY(0) scale(1);
+            }
+          }
+        }
+
+        &.auth-rt-img-div {
+          &::before {
+            top: 60px;
+            right: -90px;
+          }
+        }
+
+        &.auth-lt-img-div {
+          &::before {
+            background: url(../images/character/blooksy-character-img01.png) no-repeat;
+            background-position: top left;
+            top: 60px;
+            left: -90px;
+            animation: character-animation03 2s none 0s ease-out;
+
+            @keyframes character-animation03 {
+              0% {
+                transform: rotate(0) translateX(80%) translateY(80%);
+              }
+
+              99% {
+                transform: rotate(0) translateX(0) translateY(0);
+              }
+            }
+          }
+        }
+
+        .auth-content-div {
+          padding: 25px 40px;
+          max-width: 100%;
+          width: 100%;
+          margin: 0 auto;
+          background: #fff;
+          box-shadow: 9px 9px 110px 0 rgba(1, 40, 106, 0.39);
+          border-radius: 9px;
+          position: relative;
+          z-index: 3;
+
+          .auth-logo-div {
+            padding: 35px 0 0 0;
+            margin: 0 0 45px 0;
+            position: relative;
+            width: 100%;
+
+            .img-responsive {
+              width: 115px;
+              height: auto;
+              object-fit: contain;
+              object-position: left;
+            }
+          }
+
+          .heading-div {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+            min-height: 520px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+              font-weight: 900;
+              font-size: 120px;
+              color: #296ae0;
+              margin: 0 0 10px 0;
+              display: block;
+              width: 100%;
+              letter-spacing: 0;
+              line-height: 1.1;
+            }
+
+            h2 {
+              font-weight: 700;
+              font-size: 36px;
+              color: #0c286a;
+              margin: 0 0 10px 0;
+              display: block;
+              width: 100%;
+              letter-spacing: 0;
+              line-height: 1.5;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 18px;
+              color: rgba(0, 20, 54, 0.45);
+              letter-spacing: 0;
+              line-height: 1.5;
+            }
+
+            .general-form-btn {
+              width: 100%;
+              margin: 40px 0 0 0;
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+          }
+
+          .bottom-row {
+            margin: 0 0 0 0;
+
+            .text-center-reg-side {
+              text-align: center;
+
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                color: #4a4a4a;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0;
+
+                .btn-primary-link {
+                  padding: 0;
+                  margin: 0 0 0 5px;
+                  line-height: inherit;
+
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-not-found-section {
+    .page-not-found-div {
+      .page-not-found-root-div {
+        padding: 10px 10px;
+
+        .auth-center-side {
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            display: none;
+          }
+
+          .auth-content-div {
+            padding: 15px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-not-found-section {
+    .page-not-found-div {
+      .page-not-found-root-div {
+        .auth-center-side {
+          width: 540px;
+
+          &::after {
+            height: 296px;
+            width: 140%;
+            left: -20%;
+          }
+        }
+      }
+    }
+  }
+}
